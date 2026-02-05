@@ -1,16 +1,19 @@
 Macaulay2 in Browser
 
+Screenshot:
+![screenshot](screenshot.png)
 How to build:
 
 - clone this project
 - delete "images" folder
 - run `cd tools/docker/Macaulay2`
 - run `./build.sh`
-- run './build-state.js'
+- run `./build-state.js`
 - run `cd ../../../`
 - run `make run`
 
 Then, you can remove debian-9p-rootfs.tar
+
 You may need tools/docker/Macaulay2/split.sh to split the debian-state-base.bin file.
 
 Credit:
