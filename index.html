@@ -35,10 +35,6 @@ async function createStateBlobUrl(baseName) {
         }
     }
 
-    if (parts.length === 0) {
-        throw new Error("No state file parts found");
-    }
-
     const blob = new Blob(parts, { type: "application/octet-stream" });
     return URL.createObjectURL(blob);
 }
