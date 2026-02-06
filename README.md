@@ -9,12 +9,14 @@ How to build:
 - run `cd tools/docker/Macaulay2`
 - run `./build.sh`
 - run `./build-state.js`
-- run `cd ../../../`
+- run 'cp split.sh ../../../images/split.sh'
+- run `cd ../../../images`
+- run './split.sh'
+- run 'rm debian-9p-rootfs.tar debian-state-base.bin'
+- run 'cd ..'
 - run `make run`
 
-Then, you can remove debian-9p-rootfs.tar
-
-You may need tools/docker/Macaulay2/split.sh to split the debian-state-base.bin file.
+  This should start a server on 8000 (or other ports).
 
 Credit:
 - Macaulay2: https://macaulay2.com/
